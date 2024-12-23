@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+body {
+  @apply bg-gradient-to-r from-red-500 to-yellow-500 min-h-screen;
+}
+
+.box {
+  @apply container mx-auto min-h-screen pt-5 pb-10;
+}
+
+.title {
+  @apply font-bold text-4xl text-center;
+}
+
+.form {
+  @apply mx-auto my-10 flex justify-center;
+}
+
+.form__input {
+  @apply outline-none bg-white p-3 text-sm font-semibold rounded-l-md;
+}
+
+.form__search {
+  @apply bg-black p-3 text-sm text-white font-bold cursor-pointer rounded-r-md;
+}
+
+.movies {
+  @apply grid grid-cols-4 gap-8;
+}
+
+.card {
+  @apply relative flex flex-col h-64 rounded-md;
+}
+
+.card__img {
+  @apply object-cover w-full h-full;
+}
+
+.card__info {
+  @apply absolute bottom-0 w-full bg-white opacity-85 flex flex-col py-3 px-4;
+}
+
+.card__info:hover {
+  @apply bg-black text-white opacity-100 transition duration-150 ease-in;
+}
+
+.card__title {
+  @apply font-bold text-sm text-center;
+}
+
+.card__spec {
+  @apply font-light text-sm;
+}

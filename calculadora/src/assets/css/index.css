@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calculator {
+  @apply flex flex-col shadow-sm bg-white shadow-gray-500 rounded-lg p-3;
+}
+
+.display {
+  @apply bg-white shadow-sm rounded-lg p-2 text-lg font-semibold mb-3 border;
+}
+
+.buttons {
+  @apply grid grid-cols-4 grid-rows-4 gap-4;
+}
+
+.button {
+  @apply text-base font-semibold rounded-md bg-white text-gray-500 border w-10 h-10;
+}
+
+.button:focus {
+  @apply scale-105;
+}

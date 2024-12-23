@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  @apply text-2xl font-extrabold text-center mb-3;
+}
+
+.btn {
+  @apply rounded-sm p-2 text-xs font-semibold;
+}
+
+.btn-login {
+  @apply text-white bg-blue-500;
+}
+
+.btn-logout {
+  @apply text-white bg-gray-500;
+}
+
+img {
+  @apply w-full h-full object-cover;
+}
+
+.username {
+  @apply font-bold text-sm text-center my-3;
+}
+
+.user-photo {
+  @apply rounded-full overflow-hidden;
+}
+
+.user-photo-profile {
+  @apply w-28;
+}
+
+.user-photo-message {
+  @apply w-8 h-8 cursor-pointer;
+}
+
+.message {
+  @apply flex mb-4;
+}
+
+.my-message {
+  @apply justify-start;
+}
+
+.other-message {
+  @apply justify-end;
+}
+
+.text-message {
+  @apply text-sm font-normal rounded-md p-2;
+}
+
+.my-message .text-message {
+  @apply bg-slate-200 text-gray-600;
+}
+
+.other-message .text-message {
+  @apply bg-slate-600 text-white;
+}
+
+.date-message {
+  @apply font-light text-xs text-black;
+}
+
+.close {
+  @apply hidden;
+}
+
+.open {
+  @apply block absolute -top-2;
+}

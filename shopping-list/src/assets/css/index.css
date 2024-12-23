@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos para el scrollbar de navegación */
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #2d3748;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Cambia al color deseado (ejemplo: bg-gray-700) */
+  border-radius: 6px; /* Redondea los extremos del pulgar del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2d3748; /* Cambia al color deseado (ejemplo: bg-gray-600) */
+  border-radius: 6px; /* Redondea los extremos de la pista del scrollbar */
+}
+
+/* Firefox */
+.scrollbar-thumb-gray-700 {
+  background-color: #4a5568; /* Cambia al color deseado (ejemplo: bg-gray-700) */
+  border-radius: 6px; /* Redondea los extremos del pulgar del scrollbar */
+}
+
+.scrollbar-track-bg-gray-600 {
+  background-color: #2d3748; /* Cambia al color deseado (ejemplo: bg-gray-600) */
+  border-radius: 6px; /* Redondea los extremos de la pista del scrollbar */
+}
